@@ -99,16 +99,18 @@ export default function ManifestoSection() {
               className="flex flex-wrap items-center gap-5 pt-1"
             >
               <a
-                href="#unete"
+                href={`${import.meta.env.VITE_APP_URL || 'http://localhost:3001'}/register`}
                 className="inline-flex items-center bg-[#F05033] hover:bg-[#d9442a] text-white px-7 py-3.5 rounded-xl font-bold text-base transition-colors shadow-sm"
               >
                 Únete gratis →
               </a>
               <a
-                href="#proveedor"
+                href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER || '50766839406'}?text=${encodeURIComponent("Hola Pa'lla, soy distribuidor y me interesa vender en su plataforma.")}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-[#1A1A1A] font-semibold text-base underline underline-offset-4 hover:text-[#F05033] transition-colors"
               >
-                Soy proveedor
+                Soy distribuidor
               </a>
             </motion.div>
 

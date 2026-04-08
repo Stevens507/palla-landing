@@ -54,8 +54,7 @@ export default function Navbar() {
 
         {/* Desktop CTA */}
         <a
-          href="#manifesto"
-          onClick={(e) => handleLink(e, '#manifesto')}
+          href={`${import.meta.env.VITE_APP_URL || 'http://localhost:3001'}/register`}
           className="hidden md:inline-flex px-5 py-2.5 rounded-full text-sm font-semibold font-sans text-white transition-opacity hover:opacity-90"
           style={{ backgroundColor: '#2D2687' }}
         >
@@ -88,8 +87,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#manifesto"
-            onClick={(e) => handleLink(e, '#manifesto')}
+            href={`${import.meta.env.VITE_APP_URL || 'http://localhost:3001'}/register`}
             className="inline-flex justify-center px-5 py-2.5 rounded-full text-sm font-semibold font-sans text-white"
             style={{ backgroundColor: '#2D2687' }}
           >

@@ -13,8 +13,8 @@ const footerLinks = [
     heading: 'Para ti',
     links: [
       { label: 'Tiendas de barrio', href: '#manifesto' },
-      { label: 'Proveedores', href: '#proveedor' },
-      { label: 'Únete gratis', href: '#unete' },
+      { label: 'Distribuidores', href: `https://wa.me/50766839406?text=${encodeURIComponent("Hola Pa'lla, soy distribuidor y me interesa vender en su plataforma.")}` },
+      { label: 'Únete gratis', href: '#manifesto' },
     ],
   },
   {
@@ -22,7 +22,7 @@ const footerLinks = [
     links: [
       { label: "Sobre Pa'lla", href: '#' },
       { label: 'Contacto', href: 'mailto:hola@palla.pa' },
-      { label: 'WhatsApp', href: 'https://wa.me/50700000000' },
+      { label: 'WhatsApp', href: 'https://wa.me/50766839406' },
     ],
   },
   {

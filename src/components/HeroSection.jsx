@@ -70,18 +70,20 @@ export default function HeroSection() {
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <a
-              href="#pricing"
+              href={`${import.meta.env.VITE_APP_URL || 'http://localhost:3001'}/register`}
               className="px-8 py-4 rounded-full text-white font-semibold text-lg transition-opacity hover:opacity-90"
               style={{ backgroundColor: '#F05033', boxShadow: '0 4px 20px rgba(240,80,51,0.4)' }}
             >
               Quiero abastecer mi tienda
             </a>
             <a
-              href="#pricing"
+              href={`https://wa.me/${import.meta.env.VITE_WHATSAPP_NUMBER || '50766839406'}?text=${encodeURIComponent('Hola Pa\'lla, soy distribuidor y me interesa vender en su plataforma.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 rounded-full font-semibold text-sm transition-opacity hover:opacity-80"
               style={{ backgroundColor: 'rgba(255,255,255,0.85)', color: '#2D2687', backdropFilter: 'blur(8px)' }}
             >
-              Quiero vender en Pa'lla
+              Soy distribuidor
             </a>
           </div>
         </div>
